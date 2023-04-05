@@ -1,0 +1,30 @@
+* {
+    font-family: montserrat;
+    padding: 0px;
+    margin: 0px;
+  }
+
+.icon {
+  font-size: 6em;
+}
+
+.fs-7 {
+  font-size: 35px;
+}
+
+.bg-dark-transparent {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.bi-arrow-down-short {
+  animation: upDown 2s infinite;
+}
+
+@keyframes upDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
