@@ -50,43 +50,39 @@
       </div>
   </div>
 
-    <!-- Introduction Section -->
-    <section style="padding-top: 56px;">
-      <div class="container" style="height: 75vh;">
-        <div class="d-flex align-items-center justify-content-center h-75">
-          <div class="row w-100">
-            <div class="col-md-8 col-sm-12 pt-5" data-aos="fade-right" data-aos-duration="700" data-aos-once="true">
-              <h2 class="fs-7 fw-bold pb-0 mb-0">Hi, I'm Landon Tally!</h2>
-              <p class="fs-6 text-wrap">Web Developer - Programmer - Lifelong Learner</p>
-              <p class="fs-5 lead">As a frontend web developer, I am passionate about crafting visually stunning and immersive user experiences that captivate and delight my audiences.</p>
-            </div>
-            <div class="col-md-4 col-sm-12 pt-5 text-center" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
-              <img src="https://sharon-yi.com/assets/avatar.png" style="height: 300px; width: auto;">
-            </div>
+  <section style="padding-top: 56px;" id="home">
+    <div class="container" style="height: 75vh;">
+      <div class="d-flex align-items-center justify-content-center h-75">
+        <div class="row w-100">
+          <div class="col-md-8 col-sm-12 pt-5" data-aos="fade-right" data-aos-duration="700" data-aos-once="true">
+            <h2 class="fs-7 fw-bold pb-0 mb-0">Hi, I'm Landon Tally!</h2>
+            <p class="fs-6 text-wrap">Web Developer - Programmer - Lifelong Learner</p>
+            <p class="fs-5 lead">As a frontend web developer, I am passionate about crafting visually stunning and immersive user experiences that captivate and delight my audiences.</p>
           </div>
-        </div>
-        <div class="d-flex align-items-center h-auto">
-          <div class="row w-100 p-0 m-0">
-            <div class="row w-100 text-center p-0 m-0">
-              <i class="bi bi-arrow-down-short" style="font-size: 6em;"></i>
-            </div>
+          <div class="col-md-4 col-sm-12 pt-5 text-center" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
+            <img src="https://sharon-yi.com/assets/avatar.png" style="height: 300px; width: auto;">
           </div>
         </div>
       </div>
-    </section>
+      <div class="d-flex align-items-center h-auto justify-content-center">
+        <div class="row w-100 text-center p-0 m-0">
+          <i class="bi bi-arrow-down-short" style="font-size: 6em; margin-top: 45px;"></i>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <!-- About Me -->
-    <section>
-      <div class="container" style="height: 50vh">
+    <section id="about">
+      <div class="container">
         <div class=" mt-5 d-flex align-items-center justify-content-center"></div>
           <div class="row w-100">
             <div class="col-md-4 col-sm-12 py-3 text-center" data-aos="fade-right" data-aos-duration="700" data-aos-once="true">
-              <img src="./img/tyrion.svg" style="height: 300px; width:auto;">
+              <img src="./img/tyrion.svg" style="max-height: 300px; width:auto;">
             </div>
             <div class="col-md-8 col-sm-12 py-3">
               <h2 class="fw-bold" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">Welcome to my portfolio!</h2>
               <p class="lead fs-5" data-aos="fade-left" data-aos-duration="700" data-aos-once="true">
-                Thank you for taking the time to visit my portfolio.
                 I graduated from Indiana State University with a Bachelor of Science in Computer Engineering Technology. 
                 Most of my experience has been programming in C and Python, but I have been taking the time and effort
                 to learn and develop as a frontend web developer.       
@@ -102,7 +98,7 @@
     </section>
 
     <!-- Projects Section -->
-    <div class="container my-5">
+    <div class="container my-5" id="projects">
       <div class="d-flex justify-content-center mb-4" data-aos="fade-up" data-aos-duration="700" data-aos-once="true">
           <div class="btn-group" role="group" aria-label="Filter by Category">
               <button type="button" class="btn btn-dark filter-btn" data-filter="all">All</button>
@@ -131,32 +127,80 @@
           <div class="col-md-3 mb-4 filter-item frontend">
             <div class="card h-100 text-center">
                 <div class="card-body">
-                    <i class="bi bi-code fs-1"></i>
-                    <h5 class="card-title">JavaScript</h5>
+                  <i class="fa-brands fa-css3-alt fs-1"></i>
+                    <h5 class="card-title">CSS3</h5>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 filter-item backend">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                  <i class="fa-brands fa-python fs-1"></i>
+                    <h5 class="card-title">Python</h5>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 filter-item backend">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                  <i class="fa-solid fa-c fs-1"></i>
+                    <h5 class="card-title">C Programming</h5>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 filter-item tools">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                  <i class="fa-brands fa-github fs-1"></i>
+                    <h5 class="card-title">Github</h5>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 filter-item backend">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                  <i class="fa-solid fa-database fs-1"></i>
+                    <h5 class="card-title">MySQL</h5>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 filter-item backend">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                  <i class="fa-solid fa-b fs-1"></i>
+                    <h5 class="card-title">Bash</h5>
                 </div>
             </div>
           </div>
           <div class="col-md-3 mb-4 filter-item frontend">
             <div class="card h-100 text-center">
                 <div class="card-body">
-                    <i class="bi bi-code fs-1"></i>
-                    <h5 class="card-title">JavaScript</h5>
+                  <i class="fa-brands fa-bootstrap fs-1"></i>
+                    <h5 class="card-title">Bootstrap 5</h5>
                 </div>
             </div>
           </div>
-          <div class="col-md-3 mb-4 filter-item frontend">
+          <div class="col-md-3 mb-4 filter-item tools">
             <div class="card h-100 text-center">
                 <div class="card-body">
-                    <i class="bi bi-code fs-1"></i>
-                    <h5 class="card-title">JavaScript</h5>
+                  <i class="fa-solid fa-image fs-1"></i>
+                    <h5 class="card-title">Adobe Photoshop</h5>
                 </div>
             </div>
           </div>
-          <div class="col-md-3 mb-4 filter-item frontend">
+          <div class="col-md-3 mb-4 filter-item tools">
             <div class="card h-100 text-center">
                 <div class="card-body">
-                    <i class="bi bi-code fs-1"></i>
-                    <h5 class="card-title">JavaScript</h5>
+                  <i class="fa-solid fa-video fs-1"></i>
+                    <h5 class="card-title">Adobe Premiere</h5>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 filter-item tools">
+            <div class="card h-100 text-center">
+                <div class="card-body">
+                  <i class="fa-solid fa-r fs-1"></i>
+                    <h5 class="card-title">R Programming</h5>
                 </div>
             </div>
           </div>
@@ -169,7 +213,20 @@
   
 
     <!-- Contact Me -->
-    <!-- Footer Section -->
+
+
+    
+    <!-- Footer -->
+    <footer class="p-3 bg-dark text-white text-center mt-5 mb-0 position-relative">
+      <div class="container pb-2">
+        <p class="lead mb-0 fs-6">
+          Developed and designed by Landon Tally
+        </p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-2" rel="nofollow">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
