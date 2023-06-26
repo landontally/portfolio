@@ -18,6 +18,10 @@
   background-attachment: fixed;
 }
 
+.hello {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
 .icon {
   font-size: 6em;
 }
