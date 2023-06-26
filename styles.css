@@ -1,13 +1,22 @@
 * {
-    font-family: montserrat;
-    padding: 0px;
-    margin: 0px;
-  }
+  font-family: montserrat;
+  padding: 0px;
+  margin: 0px;
+}
 
 /* Navbar Styles */
 .navbar {
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
-  }
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+/* Header Styles */
+.header {
+  background-image: url("./img/header-bg3.jpg"); /* Replace with the path to your background image */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 .icon {
   font-size: 6em;
