@@ -1,378 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="Landon Tally">
+    <meta name="author" content="Landon Tally" />
+    <meta name="description" content="Portfolio of Landon Tally - Web Developer and Tech Enthusiast">
 
-    <!-- Styles -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css" integrity="sha512-yDUXOUWwbHH4ggxueDnC5vJv4tmfySpVdIcN1LksGZi8W8EVZv4uKGrQc0pVf66zS7LDhFJM7Zdeow1sw1/8Jw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Landon Tally | Web Developer</title>
 
-    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nunito+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="styles.css" />
-    <title>Welcome to my Portfolio | Landon Tally</title>
-  </head>
+</head>
 
-  <body>
+<body id="home">
 
-  <!-- Navbar -->
-  <div class="sticky-top">
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggler-icon">
-              <i class="bi bi-list"></i>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">LT</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <div class="collapse" id="navbarNav">
-        <div class="bg-dark-transparent py-2">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-  </div>
 
-  <!-- Header -->
-  <header id="home" class="header vh-100 text-center position-relative">
-    <div class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100">
-      <h5 class="text-white fs-3 fw-bold text-uppercase hello">Hello, World.</h5>
-      <h1 class="display-1 fw-bold text-white">My name is Landon Tally.</h1>
-      <p class="text-white text-uppercase fs-4">
-        <span>Web Developer |</span>
-        <span>Tech Enthusiast |</span>
-        <span>Lifelong Learner</span>
-      </p>
-      <a href="#about" class="btn btn-outline-light btn-lg mt-3">
-        <div class="d-flex">
-          <div class="me-3">
-            <i class="fas fa-chevron-down">
-              ::before
-            </i>
-          </div>
-          <div class="text-start">
-            <span>More About Me</span>
-          </div>
-        </div>
-      </a>
-      <div class="social d-flex gap-3 position-relative mt-3">
-        <a href="">
-          <i class="fab fa-twitter fa-3x text-white">
-            ::before
-          </i>
-        </a>
-        <a href="">
-          <i class="fab fa-linkedin fa-3x text-white">
-            ::before
-          </i>
-        </a>
-        <a href="">
-          <i class="fab fa-facebook fa-3x text-white">
-            ::before
-          </i>
-        </a>
-        <a href="">
-          <i class="fab fa-github fa-3x text-white">
-            ::before
-          </i>
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <!-- About Me -->
-  <section id="about" class="bg-light">
-    <div class="container">
-      <div class="pt-5 mt-5 d-flex align-items-center justify-content-center"></div>
-        <div class="row w-100">
-          <div class="col-md-4 col-sm-12 py-3 text-center" data-aos="fade-right" data-aos-duration="1300" data-aos-once="true">
-            <img src="./img/photo.jpg" class="rounded-5" style="max-height: 300px; width:auto;">
-          </div>
-          <div class="col-md-8 col-sm-12 py-3" data-aos="fade-left" data-aos-duration="1300" data-aos-once="true">
-            <h2 class="fs-1 fw-bold">About Me</h2>
-            <p class="lead fs-5">
-              I graduated from Indiana State University with a Bachelor of Science in Computer Engineering Technology. 
-              Most of my experience has been programming in C and Python, but I have been taking the time and effort
-              to learn and develop as a frontend web developer.       
+    <header class="header vh-100 d-flex justify-content-center align-items-center text-center text-white position-relative">
+        <div class="overlay"></div>
+        
+        <div class="container position-relative z-2">
+            <h5 class="text-uppercase text-light fw-light mb-3 ls-2">Hello, World.</h5>
+            <h1 class="display-2 fw-bold mb-3">I'm Landon Tally.</h1>
+            <p class="lead text-uppercase mb-5 fw-light">
+                Web Developer <span class="mx-2">|</span> Tech Enthusiast <span class="mx-2">|</span> Lifelong Learner
             </p>
-            <p class="lead fs-5">I love to learn. I'm always looking forward to new opportunities that give me that chance to 
-              grow and develop, not just as a programmer or web developer, but also as a person. I am eager to grow my skill set, 
-              but I also want to focus on creating depth in what I learn and what I create. Even if what I learn is something small, 
-              I'll still call it a step forward.</p>
+            
+            <a href="#about" class="btn btn-outline-light btn-lg rounded-pill px-5">
+                More About Me
+            </a>
 
-            <p class="lead fs-5">
-              When I'm not programming, I can be found playing a video game on my PC, reading a fantasy novel, or 
-              obsessing over a good show. Feel free to reach out to me if you have any good recommendations!
-            </p>
-          </div>
+            <div class="social-icons mt-5 d-flex gap-4 justify-content-center">
+                <a href="#" class="text-white"><i class="fab fa-twitter fa-2x hover-lift"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-linkedin fa-2x hover-lift"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-facebook fa-2x hover-lift"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-github fa-2x hover-lift"></i></a>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Skills Section -->
-  <div class="container py-5">
-    <div class="d-flex justify-content-center mb-4" data-aos="fade-left" data-aos-duration="1300" data-aos-once="true">
-        <div class="btn-group py-1" role="group" aria-label="Filter by Category">
-            <button type="button" class="btn btn-dark filter-btn" data-filter="all">All</button>
-            <button type="button" class="btn btn-outline-dark filter-btn" data-filter="frontend">Frontend</button>
-            <button type="button" class="btn btn-outline-dark filter-btn" data-filter="backend">Backend</button>
-            <button type="button" class="btn btn-outline-dark filter-btn" data-filter="tools">Tools</button>
-        </div>
-    </div>
-    <div class="row" data-aos="fade-left" data-aos-duration="1300" data-aos-once="true">
-        <div class="col-md-3 mb-4 filter-item frontend">
-            <div class="card h-100 text-center">
-                <div class="card-body">
-                    <i class="fa-brands fa-html5 fs-1"></i>
-                    <h5 class="card-title">HTML5</h5>
+    <section id="about" class="section-padding bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0 text-center">
+                    <img src="./img/photo.jpg" alt="Landon Tally" class="img-fluid rounded-circle shadow-lg" style="max-width: 300px;">
+                </div>
+                <div class="col-lg-7">
+                    <h6 class="text-uppercase text-primary fw-bold mb-2">Who I am</h6>
+                    <h2 class="fw-bold mb-4">About Me</h2>
+                    <p class="lead text-muted mb-4">
+                        I graduated from Indiana State University with a Bachelor of Science in Computer Engineering Technology. 
+                    </p>
+                    <p class="text-muted">
+                        Most of my experience has been programming in C and Python, but I have been taking the time to learn and develop as a frontend web developer. I love to learn. I'm always looking forward to new opportunities that give me that chance to grow and develop, not just as a programmer, but as a person.
+                    </p>
+                    <div class="mt-4">
+                        <a href="#contact" class="btn btn-dark px-4">Get In Touch</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-3 mb-4 filter-item frontend">
-          <div class="card h-100 text-center">
-              <div class="card-body">
-                  <i class="fa-brands fa-square-js fs-1"></i>
-                  <h5 class="card-title">JavaScript</h5>
-              </div>
-          </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Technical Skills</h2>
+                <div class="btn-group mt-3" role="group" aria-label="Filter Skills">
+                    <button type="button" class="btn btn-dark filter-btn" data-filter="all">All</button>
+                    <button type="button" class="btn btn-outline-dark filter-btn" data-filter="frontend">Frontend</button>
+                    <button type="button" class="btn btn-outline-dark filter-btn" data-filter="backend">Backend</button>
+                    <button type="button" class="btn btn-outline-dark filter-btn" data-filter="tools">Tools</button>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-3 filter-item frontend">
+                    <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
+                        <div class="card-body">
+                            <i class="fa-brands fa-html5 fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">HTML5</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 filter-item frontend">
+                    <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
+                        <div class="card-body">
+                            <i class="fa-brands fa-square-js fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">JavaScript</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 filter-item frontend">
+                    <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
+                        <div class="card-body">
+                            <i class="fa-brands fa-css3-alt fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">CSS3</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 filter-item frontend">
+                    <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
+                        <div class="card-body">
+                            <i class="fa-brands fa-bootstrap fa-3x text-purple mb-3" style="color: #6610f2;"></i>
+                            <h5 class="card-title">Bootstrap 5</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 filter-item backend">
+                    <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
+                        <div class="card-body">
+                            <i class="fa-brands fa-python fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">Python</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 filter-item backend">
+                    <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-c fa-3x text-secondary mb-3"></i>
+                            <h5 class="card-title">C / C++</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 filter-item backend">
+                    <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-database fa-3x text-info mb-3"></i>
+                            <h5 class="card-title">MySQL</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 filter-item backend">
+                    <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-terminal fa-3x text-dark mb-3"></i>
+                            <h5 class="card-title">Bash</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 filter-item tools">
+                    <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
+                        <div class="card-body">
+                            <i class="fa-brands fa-github fa-3x text-dark mb-3"></i>
+                            <h5 class="card-title">Github</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 filter-item tools">
+                    <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-image fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Photoshop</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-3 mb-4 filter-item frontend">
-          <div class="card h-100 text-center">
-              <div class="card-body">
-                <i class="fa-brands fa-css3-alt fs-1"></i>
-                  <h5 class="card-title">CSS3</h5>
-              </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-4 filter-item backend">
-          <div class="card h-100 text-center">
-              <div class="card-body">
-                <i class="fa-brands fa-python fs-1"></i>
-                  <h5 class="card-title">Python</h5>
-              </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-4 filter-item backend">
-          <div class="card h-100 text-center">
-              <div class="card-body">
-                <i class="fa-solid fa-c fs-1"></i>
-                  <h5 class="card-title">C Programming</h5>
-              </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-4 filter-item tools">
-          <div class="card h-100 text-center">
-              <div class="card-body">
-                <i class="fa-brands fa-github fs-1"></i>
-                  <h5 class="card-title">Github</h5>
-              </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-4 filter-item backend">
-          <div class="card h-100 text-center">
-              <div class="card-body">
-                <i class="fa-solid fa-database fs-1"></i>
-                  <h5 class="card-title">MySQL</h5>
-              </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-4 filter-item backend">
-          <div class="card h-100 text-center">
-              <div class="card-body">
-                <i class="fa-solid fa-b fs-1"></i>
-                  <h5 class="card-title">Bash</h5>
-              </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-4 filter-item frontend">
-          <div class="card h-100 text-center">
-              <div class="card-body">
-                <i class="fa-brands fa-bootstrap fs-1"></i>
-                  <h5 class="card-title">Bootstrap 5</h5>
-              </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-4 filter-item tools">
-          <div class="card h-100 text-center">
-              <div class="card-body">
-                <i class="fa-solid fa-image fs-1"></i>
-                  <h5 class="card-title">Adobe Photoshop</h5>
-              </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-4 filter-item tools">
-          <div class="card h-100 text-center">
-              <div class="card-body">
-                <i class="fa-solid fa-video fs-1"></i>
-                  <h5 class="card-title">Adobe Premiere</h5>
-              </div>
-          </div>
-        </div>
-        <div class="col-md-3 mb-4 filter-item tools">
-          <div class="card h-100 text-center">
-              <div class="card-body">
-                <i class="fa-solid fa-r fs-1"></i>
-                  <h5 class="card-title">R Programming</h5>
-              </div>
-          </div>
-        </div>
-    </div>
-  </div>
+    </section>
   
-  <!-- Projects -->
-  <section id="projects" class="py-5 mt-5">
-    <div class="container">
-      <div class="text-container d-flex justify-content-center align-items center">
-        <h2 class="fs-1 fw-bold" data-aos="fade-up" data-aos-duration="1300" data-aos-once="true">My Projects</h2>
-      </div>
-      <hr class="w-25 mx-auto pb-2">
-      <div class="row w-100">
-          <div class="col-md-7 col-sm-12 pt-5">
-            <h2 class="fs-2 fw-bold"  data-aos="fade-right" data-aos-duration="1300" data-aos-once="true">Jax Property Group</h2>
-            <p class="lead fs-5"  data-aos="fade-right" data-aos-duration="1300" data-aos-once="true">
-              Bootstrap 5 | HTML5 | CSS3 | Javascript | Mapbox GL JS
-            </p>
-            <p class="lead fs-5"  data-aos="fade-up" data-aos-duration="1300" data-aos-once="true">
-              A fully responsive website for a commercial real estate company. By using Javascript, the properties
-              are dynamically generated in both the map and the property list while allowing them to interact with
-              each other.
-            </p>
-            <div class="d-flex gap-2" data-aos="fade-right" data-aos-duration="1300" data-aos-once="true">
-              <a href="https://jaxpropgroup.com/" target="_blank">
-                <button class="btn btn-dark" type="button">
-                  <i class="bi bi-box-arrow-up-right"></i>
-                </button>
-              </a>
-              <a href="https://github.com/landontally/kamen-real-estate" target="_blank">
-                <button class="btn btn-dark" type="button">
-                  <i class="fa-brands fa-github"></i>
-                </button>
-              </a>
-            </div>            
-          </div>
-          <div class="col-md-5 col-sm-12 py-3 text-center" data-aos="fade-left" data-aos-duration="1300" data-aos-once="true">
-            <img src="./img/kamen-preview2.jpg" class="rounded-5 img-fluid" style="max-height: 400px; width: 100%;">
-          </div>          
-      </div>
-      <div class="row w-100">
-        <div class="col-md-7 col-sm-12 pt-5">
-          <h2 class="fs-2 fw-bold" data-aos="fade-right" data-aos-duration="1300" data-aos-once="true">Sip Finder</h2>
-          <p class="lead fs-5" data-aos="fade-right" data-aos-duration="1300" data-aos-once="true">
-            React | React-Bootstrap | Javascript | MongoDB | APIs | CSS
-          </p>
-          <p class="lead fs-5" data-aos="fade-up" data-aos-duration="1300" data-aos-once="true">
-            A responsive progressive web app built using React. This web app is primarily 
-            designed to find a cocktail recipe by placing an ingredient into the search bar.
-            The MongoDB Atlas cluster was populated using TheCocktailDB API. The database is 
-            not currently active. 
-          </p>
-          <div class="d-grid gap-2 d-flex" data-aos="fade-right" data-aos-duration="1300" data-aos-once="true">
-            <a href="https://landontally.github.io/cocktail-pwa/" target="_blank">
-              <button class="btn btn-dark" type="button">
-                <i class="bi bi-box-arrow-up-right"></i>
-              </button>
-            </a>
-            <a href="https://github.com/landontally/cocktail-pwa/" target="_blank">
-              <button class="btn btn-dark" type="button">
-                <i class="fa-brands fa-github"></i>
-              </button>
-            </a>
-          </div>
+    <section id="projects" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-uppercase text-primary fw-bold mb-2">Portfolio</h6>
+                <h2 class="fw-bold">Recent Projects</h2>
+            </div>
+
+            <div class="row mb-5 bg-white p-4 shadow-sm rounded align-items-center">
+                <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+                   <img src="./img/jaxstreetcre-preview.jpg" class="img-fluid rounded shadow-sm border" alt="Jax Street CRE Website">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h3 class="fw-bold">Jax Street CRE</h3>
+                    <p class="text-muted small text-uppercase mb-3">Bootstrap 5 | Javascript | Mapbox GL JS</p>
+                    <p class="lead fs-6">
+                        A fully responsive website for a commercial real estate company. By using Javascript, the properties are dynamically generated in both the map and the property list while allowing them to interact with each other.
+                    </p>
+                    <div class="mt-3">
+                        <a href="https://jaxstreetcre.com/" target="_blank" class="btn btn-outline-dark me-2"><i class="bi bi-box-arrow-up-right me-2"></i>Live Site</a>
+                        <a href="https://github.com/landontally/kamen-real-estate" target="_blank" class="btn btn-dark"><i class="fa-brands fa-github me-2"></i>Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5 bg-white p-4 shadow-sm rounded align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="./img/kksales-preview.jpg" class="img-fluid rounded shadow-sm border" alt="K&K Sales Website">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="fw-bold">K&K Sales, LLC</h3>
+                    <p class="text-muted small text-uppercase mb-3">Svelte | Typescript | Splide | Sanity | Tailwind CSS</p>
+                    <p class="lead fs-6">
+                        A responsive website built using Svelte and Typescript for a local company that sells coin-operated claw machines, arcade machines, and toys.
+                        Created a custom slider using Splide to showcase their products and integrated Sanity as a headless CMS to allow easy updates to the product listings.
+                        Also provided digitally drawn images based off of photos of their actual products.
+                    </p>
+                    <div class="mt-3">
+                        <a href="https://kksales.com" target="_blank" class="btn btn-outline-dark me-2"><i class="bi bi-box-arrow-up-right me-2"></i>Live Site</a>
+                        <a href="https://github.com/landontally/kk-sales" target="_blank" class="btn btn-dark"><i class="fa-brands fa-github me-2"></i>Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row bg-white p-4 shadow-sm rounded align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="./img/cocktail-pwa.jpg" class="img-fluid rounded shadow-sm border" alt="Sip Finder App">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="fw-bold">Sip Finder</h3>
+                    <p class="text-muted small text-uppercase mb-3">React | MongoDB | APIs</p>
+                    <p class="lead fs-6">
+                        A responsive progressive web app built using React. Designed to find a cocktail recipe by placing an ingredient into the search bar. The MongoDB Atlas cluster was populated using TheCocktailDB API.
+                    </p>
+                    <div class="mt-3">
+                        <a href="https://landontally.github.io/cocktail-pwa/" target="_blank" class="btn btn-outline-dark me-2"><i class="bi bi-box-arrow-up-right me-2"></i>Live Site</a>
+                        <a href="https://github.com/landontally/cocktail-pwa/" target="_blank" class="btn btn-dark"><i class="fa-brands fa-github me-2"></i>Code</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-5 col-sm-12 py-3 text-center" data-aos="fade-left" data-aos-duration="1300" data-aos-once="true">
-          <img src="./img/cocktail-pwa.jpg" class="rounded-5 img-fluid" style="max-height: 400px; width: 100%;">
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container text-center">
+            <h6 class="text-uppercase text-primary fw-bold mb-2">Next Steps</h6>
+            <h2 class="fw-bold mb-4">Let's Work Together</h2>
+            <div class="col-lg-8 mx-auto">
+                <p class="lead text-muted mb-5">
+                    I'm currently seeking a junior position in web development. If you have any questions, are interested in collaborating on a project, or have a job opportunity, please don't hesitate to reach out.
+                </p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="mailto:landonraytally@gmail.com" class="btn btn-primary btn-lg px-4">Contact Me</a>
+                    <a href="/docs/Resume.pdf" download class="btn btn-outline-dark btn-lg px-4">Download Resume</a>
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Me -->
-  <section id="contact" class="py-5">
-    <div class="container position-relative d-flex flex-column justify-content-center align-items-center vh-100">
-      <h1 class="fw-semibold fs-1 text-center py-3">
-        Contact Me
-        <img src="./img/undraw_chat.svg" width="40" height="auto">
-      </h1>      
-      <p class="lead">
-        I'm currently seeking a junior position in web development. If you have any questions for me, 
-        if you're interested in connecting together or collaborating on a project, or 
-        if you have a job that you'd like for me to take on, 
-        then please don't hesitate to reach out to me.
-      </p>
-      <div class="col-12 d-flex justify-content-center align-items-center">
-        <div class="btn-group-vertical" role="group">
-          <a href="mailto:“landonraytally@gmail.com”" class="btn btn-outline-dark btn-lg text-uppercase px-5 my-2">Contact Me</a>
-          <a href="/docs/Resume.pdf" class="btn btn-dark btn-lg text-uppercase px-5 my-2" download>Download Resume</a>
+    <footer class="bg-dark text-white py-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="mb-2 mb-md-0">
+                &copy; 2023 Landon Tally. All Rights Reserved.
+            </div>
+            <div>
+                <a href="#home" class="text-white text-decoration-none">Back to Top <i class="bi bi-arrow-up-short"></i></a>
+            </div>
         </div>
-      </div>      
-    </div>   
-  </section>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="p-3 bg-dark text-white text-center mt-5 mb-0 position-relative">
-    <div class="container pb-2">
-      <p class="lead mb-0 fs-6">
-        Developed and designed by Landon Tally
-      </p>
-      <a href="#" class="position-absolute bottom-0 end-0 p-2" rel="nofollow">
-        <i class="bi bi-arrow-up-circle h1 text-white"></i>
-      </a>
-    </div>
-  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://kit.fontawesome.com/da9d92454e.js" crossorigin="anonymous"></script>
-
-  <script>
-    AOS.init();
-  </script>
-
-  <!-- Navbar Toggler JS Files -->
-  <script src="toggler.js"></script>
-
-  <!-- Toolset JS -->
-  <script>
-    document.querySelectorAll('.filter-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
-            let filter = this.dataset.filter;
-            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('btn-dark'));
-            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.add('btn-outline-dark'));
-            this.classList.add('btn-dark');
-            this.classList.remove('btn-outline-dark');
-
-            document.querySelectorAll('.filter-item').forEach(item => {
-                if (filter === 'all' || item.classList.contains(filter)) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        });
-    });
-  </script>
-
-  </body>
+</body>
 </html>
