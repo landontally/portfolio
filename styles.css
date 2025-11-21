@@ -89,10 +89,13 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 /* --- GENERAL UI --- */
 .skill-card {
     transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 1px solid #ced4da;
 }
 
 .skill-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .hover-lift {
