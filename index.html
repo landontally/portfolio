@@ -21,19 +21,24 @@
 
 <body id="home">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#home">LT</a>
+            
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <button class="btn btn-close-white position-absolute top-0 end-0 m-4 fs-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Close">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item"><a class="nav-link fs-2 fw-bold my-2" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fs-2 fw-bold my-2" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link fs-2 fw-bold my-2" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link fs-2 fw-bold my-2" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -54,11 +59,16 @@
             </a>
 
             <div class="social-icons mt-5 d-flex gap-4 justify-content-center">
-                <a href="#" class="text-white"><i class="fab fa-twitter fa-2x hover-lift"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-linkedin fa-2x hover-lift"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-facebook fa-2x hover-lift"></i></a>
-                <a href="#" class="text-white"><i class="fab fa-github fa-2x hover-lift"></i></a>
+                <a href="https://www.linkedin.com/in/landontally" class="text-white"><i class="fab fa-linkedin fa-2x hover-lift"></i></a>
+                <a href="https://www.facebook.com/nefastum" class="text-white"><i class="fab fa-facebook fa-2x hover-lift"></i></a>
+                <a href="https://github.com/landontally" class="text-white"><i class="fab fa-github fa-2x hover-lift"></i></a>
             </div>
+        </div>
+
+        <div class="custom-shape-divider-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,120L0,60Q600,0,1200,60L1200,120Z" class="shape-fill"></path>
+            </svg>
         </div>
     </header>
 
@@ -130,6 +140,22 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-6 col-md-4 col-lg-3 filter-item frontend">
+                    <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-wind fa-3x text-info mb-3"></i>
+                            <h5 class="card-title">Tailwind CSS</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 filter-item frontend">
+                    <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-code fa-3x text-danger mb-3"></i>
+                            <h5 class="card-title">Svelte</h5>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col-6 col-md-4 col-lg-3 filter-item backend">
                     <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
@@ -158,12 +184,28 @@
                 <div class="col-6 col-md-4 col-lg-3 filter-item backend">
                     <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
                         <div class="card-body">
-                            <i class="fa-solid fa-terminal fa-3x text-dark mb-3"></i>
-                            <h5 class="card-title">Bash</h5>
+                            <i class="fa-solid fa-fire fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">Firebase</h5>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-6 col-md-4 col-lg-3 filter-item backend">
+                    <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-cloud fa-3x text-danger mb-3"></i>
+                            <h5 class="card-title">Sanity.io</h5>
                         </div>
                     </div>
                 </div>
 
+                <div class="col-6 col-md-4 col-lg-3 filter-item tools">
+                    <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
+                        <div class="card-body">
+                            <i class="fa-brands fa-git-alt fa-3x text-danger mb-3"></i>
+                            <h5 class="card-title">Git</h5>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-6 col-md-4 col-lg-3 filter-item tools">
                     <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
                         <div class="card-body">
@@ -175,8 +217,24 @@
                 <div class="col-6 col-md-4 col-lg-3 filter-item tools">
                     <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
                         <div class="card-body">
+                            <i class="fa-solid fa-terminal fa-3x text-dark mb-3"></i>
+                            <h5 class="card-title">Bash</h5>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-6 col-md-4 col-lg-3 filter-item tools">
+                    <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-code-branch fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">VS Code</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 filter-item tools">
+                    <div class="card h-100 border-0 shadow-sm text-center py-4 skill-card">
+                        <div class="card-body">
                             <i class="fa-solid fa-image fa-3x text-primary mb-3"></i>
-                            <h5 class="card-title">Photoshop</h5>
+                            <h5 class="card-title">Adobe Suite</h5>
                         </div>
                     </div>
                 </div>
@@ -191,12 +249,15 @@
                 <h2 class="fw-bold">Recent Projects</h2>
             </div>
 
-            <div class="row mb-5 bg-white p-4 shadow-sm rounded align-items-center">
+            <div class="row mb-5 bg-white p-3 pt-5 pb-5 shadow-sm rounded align-items-center">
                 <div class="col-md-6 order-md-2 mb-4 mb-md-0">
                    <img src="./img/jaxstreetcre-preview.jpg" class="img-fluid rounded shadow-sm border" alt="Jax Street CRE Website">
                 </div>
                 <div class="col-md-6 order-md-1">
-                    <h3 class="fw-bold">Jax Street CRE</h3>
+                    <h3 class="fw-bold">
+                        Jax Street CRE 
+                        <span class="text-muted fw-light fs-6 fst-italic ms-2">2022</span>
+                    </h3>
                     <p class="text-muted small text-uppercase mb-3">Bootstrap 5 | Javascript | Mapbox GL JS</p>
                     <p class="lead fs-6">
                         A fully responsive website for a commercial real estate company. By using Javascript, the properties are dynamically generated in both the map and the property list while allowing them to interact with each other.
@@ -208,12 +269,15 @@
                 </div>
             </div>
 
-            <div class="row mb-5 bg-white p-4 shadow-sm rounded align-items-center">
+            <div class="row mb-5 bg-white p-3 pt-5 pb-5 shadow-sm rounded align-items-center">               
                 <div class="col-md-6 mb-4 mb-md-0">
                     <img src="./img/kksales-preview.jpg" class="img-fluid rounded shadow-sm border" alt="K&K Sales Website">
                 </div>
                 <div class="col-md-6">
-                    <h3 class="fw-bold">K&K Sales, LLC</h3>
+                    <h3 class="fw-bold">
+                        K&K Sales, LLC 
+                        <span class="text-muted fw-light fs-6 fst-italic ms-2">2025</span>
+                    </h3>
                     <p class="text-muted small text-uppercase mb-3">Svelte | Typescript | Splide | Sanity | Tailwind CSS</p>
                     <p class="lead fs-6">
                         A responsive website built using Svelte and Typescript for a local company that sells coin-operated claw machines, arcade machines, and toys.
@@ -227,12 +291,15 @@
                 </div>
             </div>
 
-            <div class="row bg-white p-4 shadow-sm rounded align-items-center">
+            <div class="row mb-5 bg-white p-3 pt-5 pb-5 shadow-sm rounded align-items-center">
                 <div class="col-md-6 mb-4 mb-md-0">
                     <img src="./img/cocktail-pwa.jpg" class="img-fluid rounded shadow-sm border" alt="Sip Finder App">
                 </div>
                 <div class="col-md-6">
-                    <h3 class="fw-bold">Sip Finder</h3>
+                    <h3 class="fw-bold">
+                        Sip Finder 
+                        <span class="text-muted fw-light fs-6 fst-italic ms-2">Inactive</span>
+                    </h3>
                     <p class="text-muted small text-uppercase mb-3">React | MongoDB | APIs</p>
                     <p class="lead fs-6">
                         A responsive progressive web app built using React. Designed to find a cocktail recipe by placing an ingredient into the search bar. The MongoDB Atlas cluster was populated using TheCocktailDB API.
@@ -252,7 +319,7 @@
             <h2 class="fw-bold mb-4">Let's Work Together</h2>
             <div class="col-lg-8 mx-auto">
                 <p class="lead text-muted mb-5">
-                    I'm currently seeking a junior position in web development. If you have any questions, are interested in collaborating on a project, or have a job opportunity, please don't hesitate to reach out.
+                    If you have any questions, are interested in collaborating on a project, or have a job opportunity, please don't hesitate to reach out.
                 </p>
                 <div class="d-flex justify-content-center gap-3">
                     <a href="mailto:landonraytally@gmail.com" class="btn btn-primary btn-lg px-4">Contact Me</a>
@@ -262,10 +329,17 @@
         </div>
     </section>
 
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white py-4 position-relative">
+        
+        <div class="custom-shape-divider-top">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0 Q600,120 1200,0 V120 H0 Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
         <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
             <div class="mb-2 mb-md-0">
-                &copy; 2023 Landon Tally. All Rights Reserved.
+                &copy; <span id="copyright-year">2023</span> Landon Tally. All Rights Reserved.
             </div>
             <div>
                 <a href="#home" class="text-white text-decoration-none">Back to Top <i class="bi bi-arrow-up-short"></i></a>

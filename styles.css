@@ -1,11 +1,11 @@
-/* 1. Set Variables for consistency */
 :root {
     --font-primary: 'Nunito Sans', sans-serif;
     --font-secondary: 'Montserrat', sans-serif;
     --color-dark-overlay: rgba(0, 0, 0, 0.6);
+    /* Darker overlay for the menu */
+    --color-menu-overlay: rgba(33, 37, 41, 0.97); 
 }
 
-/* 2. Apply fonts to body, not '*' */
 body {
     font-family: var(--font-primary);
     color: #333;
@@ -16,7 +16,6 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     font-family: var(--font-secondary);
 }
 
-/* 3. Utility Classes */
 .section-padding {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -26,18 +25,16 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     letter-spacing: 2px;
 }
 
-/* 4. Header Styles */
+/* --- HEADER --- */
 .header {
-    /* Added a fallback color in case image fails */
     background-color: #333;
     background-image: url("./img/header-bg3.jpg"); 
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    background-attachment: fixed; /* Parallax effect */
+    background-attachment: fixed;
 }
 
-/* Creates a dark tint over the image so text pops */
 .header .overlay {
     position: absolute;
     top: 0; left: 0;
@@ -46,20 +43,50 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     z-index: 1;
 }
 
-/* 5. Navbar Adjustments */
+/* --- NAVBAR OVERLAY CUSTOMIZATION --- */
 .navbar {
     transition: background-color 0.3s ease;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.navbar-nav .nav-link {
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    margin: 0 10px;
+/* When the menu is OPEN (Bootstrap adds the 'show' class) */
+.navbar-collapse.show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Full Viewport Height */
+    background-color: var(--color-menu-overlay);
+    z-index: 1050; /* Sits on top of everything */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    transition: all 0.3s ease-in-out;
 }
 
-/* 6. Interactions */
+/* Make the links bigger in the overlay */
+.navbar-nav .nav-link {
+    color: #fff !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0d6efd !important; /* Primary blue on hover */
+}
+
+/* Close Button inside the menu */
+.btn-close-white {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.btn-close-white:hover {
+    color: #ccc;
+}
+
+/* --- GENERAL UI --- */
 .skill-card {
     transition: transform 0.3s ease;
 }
@@ -75,4 +102,82 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 .hover-lift:hover {
     transform: translateY(-3px);
     color: #ccc !important;
+}
+
+/* --- SHAPE DIVIDERS --- */
+
+.custom-shape-divider-bottom,
+.custom-shape-divider-top {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    /* CRITICAL FIX: This makes the curve "invisible" to mouse clicks, 
+       so you can click the buttons behind it! */
+    pointer-events: none; 
+}
+
+/* HEADER CURVE (Bottom of Header) */
+.custom-shape-divider-bottom {
+    bottom: 0;
+    z-index: 2;
+}
+
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 250px;
+}
+
+.custom-shape-divider-bottom .shape-fill {
+    fill: #f8f9fa;
+}
+
+/* FOOTER CURVE (Top of Footer) */
+.custom-shape-divider-top {
+    top: 0;
+    z-index: 1;
+    transform: translateY(-99%);
+}
+
+.custom-shape-divider-top svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 200px;
+}
+
+.custom-shape-divider-top .shape-fill {
+    fill: #212529;
+}
+
+/* --- LAYOUT FIXES --- */
+
+/* CONTACT SECTION FIXES */
+#contact {
+    position: relative;
+    /* This ensures the buttons sit visually ON TOP of the footer background */
+    z-index: 5; 
+    /* Increased to 200px to push the buttons up away from the black curve */
+    padding-bottom: 200px !important; 
+}
+
+/* --- SECTION BORDERS --- */
+
+/* 1. Add borders to all light-gray sections */
+/* This creates the definition between your sections */
+.bg-light {
+    border-top: 1px solid #dee2e6;    /* Standard Bootstrap subtle gray */
+    border-bottom: 1px solid #dee2e6;
+    box-shadow: inset 0 8px 8px -8px rgba(0,0,0,0.15),
+                inset 0 -8px 8px -8px rgba(0,0,0,0.15);
+}
+
+/* 2. CRITICAL EXCEPTION: Remove top border from #about */
+/* We must do this so the Header Curve flows into this section seamlessly */
+#about {
+    border-top: none;
+    box-shadow: inset 0 -8px 8px -8px rgba(0,0,0,0.15);
 }
